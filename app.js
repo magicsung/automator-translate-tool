@@ -1,4 +1,5 @@
-const apiKey = 'your_apiKey';
+var key = require('./key.js');
+const apiKey = key.apiKey;
 var googleTranslate = require('google-translate')(apiKey);
 
 var input = process.argv[2];
